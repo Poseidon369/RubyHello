@@ -13,3 +13,7 @@ deploy:
   on:
     tags: true
 
+notifications:
+  email:
+    katsum@mvg.biglobe.ne.jp
+
