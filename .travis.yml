@@ -1,0 +1,15 @@
+language: ruby
+
+install: true
+
+script:
+  ruby hello.rb
+
+deploy:
+  provider: releases
+  api_key: "5eb55e1a29c4619b9197242d3b09a2cf462c2336"
+  file: "hello.txt"
+  skip_cleanup: true
+  on:
+    tags: true
+
