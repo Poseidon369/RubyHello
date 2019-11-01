@@ -13,7 +13,7 @@ deploy:
   file: "hello.txt"
   skip_cleanup: true
   on:
-    tags: false
+    tags: true
 
 notifications:
   email:
