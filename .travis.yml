@@ -7,11 +7,13 @@ script:
 
 deploy:
   provider: releases
-  api_key: "5eb55e1a29c4619b9197242d3b09a2cf462c2336"
+  api_key:
+    secure: "NKOC1UxGF/5Dj52xiQJtGO1+AHmhjgjfX3hbeNGi0VNyImqmB0CeMJ/Xe7Q1pv5m21o6ity1iZOlqGV/+vsb4lJVN0tRV7AUDFkjCzSaUE+sU8z9fmv1waswe4xyps+aKteew6Sf6QrYMEMpQxtxuy9ya/XUUvPmpU/aXIMIkzlNJKQaHZTmf/YGnPePzdlTGaTBW4UjDMjQRyd0xAcCVQlwh3k8U6MVgS2r3/ogPsjpQuPzOAftG/VUe7ThUphc35F8taiSdrPhQl95EwQcqYpyEguFS+p2AotJWACd2H1LhwzH9N9eVIYRjHhR4+/aJ6lTW/TEOGAtiEoPfZaaI6eR08Z/M+s01M8OyKQrY/JoWEc1Suk29k4DlTXQLafQWa9YR7cjVkA5ewdbSL8KW2s9c4DagGD050x+0tMxIegVoT307nMPBmj15e+BPBPlnngV62kaNoNnd6tG6xW8qfgFK0G3TgGC/QXvjHNcHFU/Lq4IwDX7XuBvApCm+onPNCCG3SDYV02UvxvRD9bfFHngWm48BuyI7TE4teyaOHsZBi3PH5NDCzjZfBJIcujis45hvZXUoGWZ8kwYgX/pq6lMMfn6iJ2h6/iCRkZH4gDuNI+smjZlbBdK4rJA6dVFZTe7crhwfUgZgY6XVN3zsBrk0LDt2fKoFwr/4y736ms="
+
   file: "hello.txt"
   skip_cleanup: true
   on:
-    tags: true
+    tags: false
 
 notifications:
   email:
